@@ -1,12 +1,12 @@
-file has to be in markdown
+[Portfolio](https://github.com/Taerchanardir/innovate_june_portfolio)
 
-just the links in markdown
+[Backend project](https://github.com/Taerchanardir/innovate_june_portfolio/tree/main/backend_project)
 
-portfolio url, on github,  = notes from lessons
-'backend project' url, on github, the 1st small project, within the portfolio project
-this weeks long project url on github
-kanban board url
+[Final project](https://github.com/Taerchanardir/inno_final_project)
+
+[Trello for final project](https://trello.com/b/bO8DVh8X/iminnovatejune2022)
 
 
 link to deployed/hosted project
+
 
