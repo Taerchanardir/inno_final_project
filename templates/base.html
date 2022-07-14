@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
   <!-- <script src="{{url_for('static', filename='app.js')}}"></script> -->
 
-  <title>Course Project</title>
+  <title>Denziens of Minecraft</title>
   
   <!-- <style>
     use bootstrap, or bootstrap and a style of mine, fight with !important
@@ -23,57 +23,116 @@
 
 </head>
 
+<!-- 
+  Chickens:
+  as we can see, chickens are a subterranean species, prefering to live in large numbers in big caves
+  the lava isn't particularly good for them though
+  Here we see a phenomena known as a 'chicken vortex'
+  Chickens seem to look more like ducks. Here we see a flock that are making a go of the duck lifestyle. Floating helps with this.
+  'We are definitely not planning to lay eggs in those hoppers over there and breaking your new contraption, nope, definitely not'
+
+
+  Endermen:
+  'it wasn't us, we did nothing'
+  'Those confused farmers over there need somewhere to plant whatever it is they are planning on growing, I'm just helping. Also, I seem to be stuck in this box, and I am definitely not a cat'
+
+
+  Villagers:
+  Here we see two villagers, who have decided the best profession in this obviously industrial setting, underground, with no natural sunlight, or arable land in sight, is Farmer'
+  Villagers have Artificial Intelligence, as do all the creatures in this strange voxel land. There is rather more of the 'artificial' than of 'intelligence'
+  'Got any dead zombie to sell mate?'. Whatever these 'cleric' villagers are brewing from bits of dead zombie is probably best avoided.
+  Villagers reproduce by parthenogenesis.
+  They sleep with their eyes open.
+  'I'm a cat'
+
+  Cats:
+  many many cats.
+  'my bed now'
+  'here, I caught a whole chicken whilst you slept'
+
+  Eric:
+  Eric here is a 'snow golem', a magical species made from snow and pumpkins.
+  He likes getting stuck in holes, for whilst he is quite happy to go two steps down, he is unable to go more than one step up.
+  This, oddly, often results in him getting stuck at the top of mountains. He has a favourite mountain to get stuck on.
+  He has been granted invulrneability, otherwise he would just melt.
+  Eric likes to wander far and wide, he leaves snow trails, here is one of his journeys. He likes chasing zombies, who just ignore him.
+
+  Zombies:
+  This is 'Zog', he's a zombie. He seems permenantly annoyed at something, despite the nice place I made for him. With the high fence surrounding it.
+  Maybe he is Hangry?
+  Doesn't seem to sleep much.
+  The endermen help him escape sometimes.
+
+  Iron golems:
+  These big metal sort-of robots are magically created by villagers, for defence. Here the villagers have created 42 iron golems. This seems like overdoing things a bit. They particularly like this corner, maybe the next wave of enroaching zombies will come from this direction.
+
+
+  Misc others:
+  Pig-men:
+  Like snow golems, they can go 2 steps down, but not 2 steps up. They have been stuck here for quite some time now.
+
+
+ -->
+
+
+
 <!-- <body onload="checkDarkMode(),checkCookies()"> -->
     
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-light" id="navbar_style">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/page1">Page 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/page2">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
 
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
+<h1>Denziens of Minecraft</h1>
 
-      </div>
+
+
+
+<nav class="navbar navbar-expand-lg bg-light" id="navbar_style">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <!-- justify-content-center   has no effect -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <!-- <a class="nav-link active" aria-current="page" href="/">Home</a>-->
+          <!-- how to do this highlighting appropriately on each page whilst using the same base.html-->
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/villagers">Villagers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/endermen">Endermen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/chickens">Chickens</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cats">Cats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/zombies">Zombies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/golems">Golems</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-   <!-- <nav>
-    <a href="{{url_for('my_view.index')}}">Home</a>
-    <a href="{{url_for('my_view.page1')}}">Page 1</a>
-  </nav> -->
+
+<div class="content">
+
 
   <div>
-
-    
-
- 
-
   {% block content %}
   {% endblock %}
-
   </div>
 
+</div>
 
  <!-- Bootstrap JavaScript Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

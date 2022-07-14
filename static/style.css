@@ -1,4 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* font-family: 'Press Start 2P', cursive; */
+
+
 #navbar_style {
-  background-color: rgb(164, 125, 255) !important;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8rem;
+  background-color: rgb(233, 233, 233) !important;
 }
 
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  /* font-size: 2.0vw; */
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.content {
+  background-color: rgb(245, 245, 245);
+}
+
+
+/* #carouselExampleCaptions { */
+
+#carouselExampleControls {
+  margin-top: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* color:darkblue !important; no effect when used here */
+}
+
+.carousel-caption-colour{
+  color:rgb(255, 255, 255); /* does work here */ /* !important; */
+  /* needs a drop shadow, or to not overlap the image */
+  background-color:rgba(0, 0, 0, 0.5)
+
+
+}

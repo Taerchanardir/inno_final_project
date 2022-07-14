@@ -5,26 +5,29 @@ my_view = Blueprint('my_view', __name__)
 def index():
   return render_template("index.html")
 
-@my_view.route('/page1')
-def page1():
-  return render_template("page1.html")
+@my_view.route('/villagers')
+def villagers():
+  return render_template("villagers.html")
 
+@my_view.route('/endermen')
+def endermen():
+  return render_template("endermen.html")
 
-# @my_view.route('/page2')
-# def page2():
-#   return render_template("page2.html")
+@my_view.route('/chickens')
+def chickens():
+  return render_template("chickens.html")
 
-# @my_view.route('/page3')
-# def page3():
-#   return render_template("page3.html")
+@my_view.route('/cats')
+def cats():
+  return render_template("cats.html")
 
-# @my_view.route('/page4')
-# def page4():
-#   return render_template("page4.html")
+@my_view.route('/zombies')
+def zombies():
+  return render_template("zombies.html")
 
-# @my_view.route('/page5')
-# def page5():
-#   return render_template("page5.html")
+@my_view.route('/golems')
+def golems():
+  return render_template("golems.html")
 
 @my_view.route('/js')
 @my_view.route('/javascript')
