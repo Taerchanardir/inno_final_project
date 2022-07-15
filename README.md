@@ -6,7 +6,6 @@
 
 [Trello for final project](https://trello.com/b/bO8DVh8X/iminnovatejune2022)
 
-
-link to deployed/hosted project
+[Deployed project on heroku](https://dashboard.heroku.com/apps/im-innovate-project-2022/deploy/heroku-git)
 
 
